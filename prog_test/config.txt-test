@@ -1,0 +1,12 @@
+#
+# class name : inp1 = par 2.3 , inp2 = 2.3 , point = point_23 
+#
+testmod_d modd : par = par1 , mod1 = modb , mod2 = modc
+testmod_c modc : par = par2 , mod = modb
+testmod_b modb : par = 3.0 , mod = moda
+testmod_a moda : par = par4
+parameter par1 : value = 1.0
+parameter par2 : value = 2.0
+parameter par3 : value = 3.0
+parameter par4 : value = 4.0
+

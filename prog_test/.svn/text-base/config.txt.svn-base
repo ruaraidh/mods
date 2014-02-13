@@ -1,0 +1,9 @@
+testmod_d modd : par = par1 , mod1 = modb , mod2 = modc
+testmod_c modc : par = par2 , mod = modb
+testmod_b modb : par = par3 , mod = moda
+testmod_a moda : par = 4.0
+parameter par1 : value = 1.0
+parameter par2 : value = 2.0
+parameter par3 : value = 3.0
+parameter par4 : value = 4.0
+

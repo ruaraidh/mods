@@ -1,0 +1,34 @@
+dot_product mydp : dir_1 = mydir1 , dir_2 = mymp
+
+movingpoint mymp : point = start , dir = fdir
+
+#------------------------
+# vectors
+#
+cross_product mycp : dir_1 = mydir1 , dir_2 = mydir2
+p2p mydir1 : point_1 = earth ,  point_2 = moon
+p2p mydir2 : point_1 = start , point_2 = end2
+fixeddir fdir : x = -0.1 , y = -0.02 , z = 0.01
+#------------------------
+# points
+#
+fixedpoint start :  x = spx  , y = spy  , z = spz
+fixedpoint end1  :  x = e1px , y = e1py , z = e1pz
+fixedpoint end2  :  x = e2px , y = e2py , z = e2pz
+
+plapoint earth : planet = 3
+plapoint moon : planet = 10
+
+#------------------------
+# parameters
+#
+parameter spx  : value = 1.0
+parameter spy  : value = 0.0
+parameter spz  : value = 0.0
+parameter e1px : value = 0.0
+parameter e1py : value = 0.1
+parameter e1pz : value = 0.0
+parameter e2px : value = 6.1
+parameter e2py : value = 8.1
+parameter e2pz : value = 2.1
+
